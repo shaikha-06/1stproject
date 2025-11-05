@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Oswald, sans-serif;
+  color: white;
+}
+
+.background {
+  background-image: url(img/abstract-geometric-diagonal-shape-dark-background_1409-1819.jpg);
+  height: 130vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  text-align: center;
+  padding: 1rem;
+}
+
+.container h1 {
+  font-size: 4rem;
+  font-weight: 300;
+  font-style: oblique;
+}
+
+.settings {
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.settings .fa-solid {
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.settings .fa-solid:hover{
+  color: #910F5A;
+
+}
+
+.settings .fa-solid:hover {
+  transform: scale(1.1);
+}
+
+.settings-content {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.settings-content input {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.settings_content button {
+  padding: 0.5rem 1rem;
+  background-color: #910F5A;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  color: white;
+  font-family: monospace;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.settings_content button:hover{
+  background-color: white;
+  color: #910F5A;
+}
+.hide {
+  display: none;
+}
+.time-container {
+  margin-top: 1rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.time-container div {
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+}
+.center h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  color: white;
+}
+.time-container h2 {
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+}
+/* 🌐 Responsive Design */
+@media (max-width: 1024px) {
+  .container h1 {
+    font-size: 3rem;
+  }
+
+  .time-container div {
+    font-size: 3rem
+  }}
+
+  @media (max-width:363px){
+    .settings{
+     
+    }
+  }
